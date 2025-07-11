@@ -1,6 +1,8 @@
 # Blog to Wiki Demo
 
-This project converts blog content to a wiki format using MkDocs.
+A demonstration of converting a blog to a wiki using AI.
+
+LLM models are used for AI and MkDocs for the wiki.
 
 ## Setup
 
@@ -25,7 +27,6 @@ uv run download-blog.py
 # Convert to wiki
 uv run convert-to-wiki.py
 ```
-
 
 ## License
 
