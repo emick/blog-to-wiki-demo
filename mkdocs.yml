@@ -1,5 +1,6 @@
 site_name: Jounin lappujuoksut
 site_url: https://emick.github.io/blog-to-wiki-demo
+
 docs_dir: wiki
 theme:
   name: material

@@ -27,7 +27,7 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 # Initialize HTML to Markdown converter
 h2t = html2text.HTML2Text()
 h2t.ignore_links = False
-h2t.ignore_images = False
+h2t.ignore_images = True
 h2t.ignore_tables = False
 h2t.body_width = 0  # No wrapping
 
