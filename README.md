@@ -16,6 +16,17 @@ uv run mkdocs serve
 
 This will start a local server.
 
+## Test run
+
+```bash
+# Download blog
+uv run download-blog.py
+
+# Convert to wiki
+uv run convert-to-wiki.py
+```
+
+
 ## License
 
 See the [LICENSE](LICENSE) file for details.
