@@ -5,6 +5,8 @@ docs_dir: wiki
 theme:
   name: material
   language: fi
+  palette:
+    primary: teal
   features:
     - navigation.indexes
     - navigation.sections
