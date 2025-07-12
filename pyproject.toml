@@ -10,4 +10,5 @@ dependencies = [
     "beautifulsoup4>=4.13.4",
     "html2text>=2025.4.15",
     "openai>=1.95.0",
+    "click==8.1.8",
 ]

@@ -34,7 +34,10 @@ uv run --env-file .env 2-create-table-of-contents.py
 # Manually validate and edit table-of-contents.txt
 
 # Convert to wiki
-uv run 3-convert-to-wiki.py
+uv run --env-file 3-convert-to-wiki.py
+
+# Tune extra instructions in table-of-contents.txt and iterate individual articles if necessary
+uv run --env-file .env 3-convert-to-wiki.py --file "wiki/Kisat/Kesäyön 60.md"
 
 # Publish to github pages
 git commit -am 'Publish changes'

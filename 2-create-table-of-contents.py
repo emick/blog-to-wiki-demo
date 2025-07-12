@@ -56,7 +56,7 @@ You are a professional content organizer.
 
 You are given a series of blog posts. Based on the blog posts, write a table of contents for a mkdocs based wiki as a file tree layout.
 
-Create subfolders for categories. You build a folder tree of the documents for mkdocs. Write the file and folder names in finnish. Do not use any characters unsupported for file names.
+Create subfolders for categories. You build a folder tree of the documents for mkdocs. Write the file and folder names in finnish. Do not use any characters unsupported for file names. UTF-8 characters and spaces are allowed. Use ∕ instead of /.
 
 For example:
 
@@ -71,7 +71,7 @@ Varustus/
 Muu/
   ekologia.md
   mentaalipuoli.md (flow, mustat hetket, keskeytyksen rajalla, motivaatio)
-  sää-ja-olosuhteet.md (helle, kylmät tunturituulet, loska- ja mutapaini)
+  sää ja olosuhteet.md (helle, kylmät tunturituulet, loska- ja mutapaini)
   mentaalipuoli.md
   eläimet.md
 Lajit/
