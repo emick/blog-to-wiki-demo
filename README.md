@@ -40,7 +40,7 @@ uv run --env-file 3-convert-to-wiki.py
 uv run --env-file .env 3-convert-to-wiki.py --file "wiki/Kisat/Kesäyön 60.md"
 
 # Publish to github pages
-git commit -am 'Publish changes'
+uv run mkdocs gh-deploy --force
 ```
 
 The resulting wiki can be found in https://emick.github.io/blog-to-wiki-demo/
