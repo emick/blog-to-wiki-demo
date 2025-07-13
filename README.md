@@ -45,6 +45,28 @@ uv run mkdocs gh-deploy --force
 
 The resulting wiki can be found in https://emick.github.io/blog-to-wiki-demo/
 
+## Process diagram
+
+```mermaid
+flowchart TD
+    S1B["💻 Blogitekstien lataus"]
+    S2A["✨ Sisällysluettelon luonti<br><br>Malli: o3<br>Konteksti: koko blogi"]
+    MAN["✎ Manuaalinen sisällysluettelon tarkistus ja muokkaus"]
+
+    subgraph STEP3["Muunnos blogista wikiksi"]
+        direction LR
+        P1["✨ Tiivistelmä aiheesta<br/><br/>Malli: o3<br/>Konteksti: koko blogi"]
+        P2["✨ Tuloksen siivous<br/><br/>Malli: o3<br/>Konteksti: tiivistelmä"]
+        P3["✨ Markdown-muunnos<br/><br/>Malli: o4-mini<br/>Konteksti: tiivistelmä, sisällysluettelo, tiedostopolku"]
+        P4["✨ Lähteiden haku<br/><br/>Malli: o4-mini<br/>Konteksti: tiivistelmä, koko blogi"]
+
+        P1 --> P2 --> P3 --> P4
+    end
+
+    S1B --> S2A --> MAN --> STEP3
+    STEP3 --> STEP3ITER["✎ Manuaalinen iterointi ja korjaus"]
+```
+
 ## GitHub Pages notes
 
 - Repository must be public
